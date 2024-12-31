@@ -8,7 +8,7 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="../images/favicon.svg" type="image/x-icon">
     <!-- css -->
-    <link rel="stylesheet" href="../css/sub4-1_style.css">
+    <link rel="stylesheet" href="../css/sub3-1_style.css">
     <!-- font -->
     <link rel="stylesheet" as="style" crossorigin
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
@@ -88,7 +88,7 @@
                                             <li>INFORMATION</li>
                                             <li><a href="./sub3-1_index.html"><img src="../images/sub3_submenu(1).jpg"
                                                         alt="sub3_img"></a></li>
-                                            <li><a href="./sub3-1_index.html"><img src="../images/sub3_submenu(2).jpg"
+                                            <li><a href="./sub3-2_index.html"><img src="../images/sub3_submenu(2).jpg"
                                                         alt="sub3_img"></a></li>
                                         </ul>
                                     </div>
@@ -124,7 +124,7 @@
 
         <!-- banner_s -->
         <div id="banner">
-            <div class="inner_banner animate__animated animate__rollIn">
+            <div class="inner_banner" data-aos="fade-right" data-aos-duration="2000">
                 <p>Welcome
                     <br>Package of
                     <br>Orientation
@@ -136,9 +136,11 @@
         <!-- section1_s -->
         <div id="section1">
             <div class="section_title">
-                <p class="animate__animated animate__flip animate__slow	1s">입 주 안 내</p>
+                <p data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" data-aos-delay="500">
+                    입 주 안 내
+                </p>
             </div>
-            <div class="title_wrap">
+            <div class="title_wrap" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1000">
                 <div class="imgbox">
                     <img src="../images/sub/sub4-1/section1_titleicon.png" alt="section1_titleicon">
                 </div>
@@ -149,7 +151,7 @@
                     </p>
                 </div>
             </div>
-            <div class="title_wrap">
+            <div class="title_wrap" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1500">
                 <div class="imgbox">
                     <img src="../images/sub/sub4-1/section1_titleicon.png" alt="section1_titleicon">
                 </div>
@@ -208,11 +210,13 @@
         <!-- section2_s -->
         <div id="section2">
             <div class="section_title">
-                <p class="animate__animated animate__flip animate__slow	1s">계 약 서 류</p>
+                <p data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    계 약 서 류
+                </p>
             </div>
             <div class="document_wrap">
                 <ul>
-                    <li class="doc_box doc_box1">
+                    <li class="doc_box doc_box1" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="500">
                         <div class="document_imgwrap">
                             <img src="../images/sub/sub4-1/section2_img1.png" alt="section2_img">
                         </div>
@@ -224,7 +228,7 @@
                             </p>
                         </div>
                     </li>
-                    <li class="doc_box doc_box2">
+                    <li class="doc_box doc_box2" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="1000">
                         <div class="document_imgwrap">
                             <img src="../images/sub/sub4-1/section2_img2.png" alt="section2_img">
                         </div>
@@ -236,7 +240,7 @@
                             </p>
                         </div>
                     </li>
-                    <li class="doc_box doc_box3">
+                    <li class="doc_box doc_box3" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="1500">
                         <div class="document_imgwrap">
                             <img src="../images/sub/sub4-1/section2_img3.png" alt="section2_img">
                         </div>
@@ -249,7 +253,7 @@
                             </p>
                         </div>
                     </li>
-                    <li class="doc_box doc_box4">
+                    <li class="doc_box doc_box4" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="1000">
                         <div class="document_imgwrap">
                             <img src="../images/sub/sub4-1/section2_img4.png" alt="section2_img">
                         </div>
@@ -262,7 +266,7 @@
                             </p>
                         </div>
                     </li>
-                    <li class="doc_box doc_box5">
+                    <li class="doc_box doc_box5" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-delay="1500">
                         <div class="document_imgwrap">
                             <img src="../images/sub/sub4-1/section2_img5.png" alt="section2_img">
                         </div>
@@ -295,7 +299,7 @@
                             <div><img src="../images/footer/footer_inf.svg" alt="footer_inf"></div>
                             <div class="i_bar">
                                 <ul>
-                                    <li>상호명 : 힐하우스 실버타운<span class="i_bar1"></span>찰스 리</li>
+                                    <li>상호명 : 힐하우스 실버타운<span class="i_bar1"></span>대표 : 찰스 리</li>
                                     <li><span class="i_bar2"></span>주소 : 부산광역시 중앙대로 450번길</li>
                                     <br>
                                     <li>사업자등록번호 : 602-3215-4562
@@ -367,6 +371,45 @@
     <script src="../js/jquery-3.7.1.min.js"></script>
     <!-- 제어코드 -->
     <!-- 클릭하면나타나기 -->
+    <script>
+        $(window).scroll(function(){
+            if($(this).scrollTop() > 300) {
+                $(".box1").addClass("ani1")
+            }else{
+                $(".box1").removeClass("ani1")
+            }
+            
+            if($(this).scrollTop() > 300) {
+                $(".box2").addClass("ani2")
+            }else{
+                $(".box2").removeClass("ani2")
+            }
+            
+            if($(this).scrollTop() > 300) {
+                $(".box3").addClass("ani3")
+            }else{
+                $(".box3").removeClass("ani3")
+            }
+
+            if($(this).scrollTop() > 300) {
+                $(".box4").addClass("ani4")
+            }else{
+                $(".box4").removeClass("ani4")
+            }
+
+            if($(this).scrollTop() > 300) {
+                $(".box5").addClass("ani5")
+            }else{
+                $(".box5").removeClass("ani5")
+            }
+        
+            }); 
+            
+       
+        //if ..한다면 이렇게 하고 else .. 한다면 이렇게 해라
+    </script>
+
+
     <script>
         $(".topBtn").click(function () {
             $("html,body").animate({

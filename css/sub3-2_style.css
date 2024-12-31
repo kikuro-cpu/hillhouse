@@ -69,6 +69,7 @@ body {
     font-size: 14px;
     line-height: 20px;
     color: black;
+    padding-top: 100px;
 }
 
 html,
@@ -155,8 +156,8 @@ body {
     top: 100px;
     width: 100%;
     z-index: 9;
-    background-color: #000000;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(150, 150, 150, 0.9);
+    /* 백그라운드 컬러 */
     display: none;
 }
 
@@ -206,7 +207,7 @@ body {
 
 /* banner_s */
 #banner {
-    background: url(../images/sub/sub3-2/sub3-2_banner.jpg) no-repeat center;
+    background: url(../images/sub/sub4-2/sub4-2_banner.jpg) no-repeat center;
     height: 600px;
     overflow: hidden;
 }
@@ -224,7 +225,7 @@ body {
     font-weight: bold;
     color: white;
     line-height: 97px;
-    opacity: 0.7;
+    opacity: 0.8;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
@@ -234,7 +235,7 @@ body {
 #section1 {
     width: 1300px;
     margin: 75px auto 130px;
-    position: relative;
+
 }
 
 .section_title {
@@ -242,7 +243,7 @@ body {
     justify-content: center;
 }
 
-.section_title h2 {
+.section_title p {
     font-size: 36px;
     font-weight: 800;
     color: white;
@@ -252,172 +253,168 @@ body {
     margin-bottom: 75px;
 }
 
-.p1 {
-    color: black;
+.textbox1 {
+    background-color: #4CA3D7;
     font-size: 20px;
-    font-weight: 500;
-    line-height: 35px;
+    font-weight: 700;
+    color: white;
+    border-radius: 20px;
+    width: 180px;
+    padding: 13px 0;
+    text-align: center;
 }
 
-.section_content {
-    display: flex;
-    justify-content: flex-start;
+.title_wrap {
+    position: relative;
 }
 
-.icon_wrap1 {
+.imgbox {
+    display: block;
     position: absolute;
-    top: 83px;
+    top: -20px;
     left: 0;
 }
 
-.icon_wrap1 img {
-    display: block;
-    width: 10%;
-}
-
-.table_wrap {
-    margin: 42px 0 20px;
-}
-
-span {
-    color: red;
-}
-
-table {
-    border: none;
-    border-top: 3px solid #457D58;
-}
-
-.table1 th,
-.table1 td,
-.table2 th,
-.table2 td {
-    border: none;
-    border-bottom: 1px solid #E0E0E0;
-}
-
-.table1 th {
-    width: 200px;
-    height: 54px;
-    font-size: 18px;
-    text-align: start;
-    padding-left: 20px;
-    border-bottom: 1px solid #9A9A9A;
-}
-
-.table1 td {
-    width: 450px;
-    height: 54px;
-    border-bottom: 1px solid #9A9A9A;
-}
-
-.table2 th {
-    font-size: 18px;
-    text-align: start;
-    padding-left: 20px;
-    border-bottom: 1px solid #9A9A9A;
-}
-
-.table2 td {
-    border-bottom: 1px solid #9A9A9A;
-}
-
-.tabl1 th span {
-    padding-left: 50px;
+.imgbox img {
     display: block;
 }
 
-.up_box {
-    margin-bottom: 20px;
+.textbox1 {
+    margin-left: 20px;
+    margin-bottom: 50px;
 }
 
-.up_box ul {
+.img_wrap>ul {
     display: flex;
     justify-content: space-between;
 }
 
-.up_box ul li:nth-child(1) {
+.img_wrap ul li {
+    position: relative;
+}
+
+.intext h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 22px;
+}
+
+.intext ul li {
+    list-style: square;
+    margin-left: 20px;
     font-size: 20px;
+    line-height: 32px;
     font-weight: 500;
-    margin-left: 10px;
 }
 
-.up_box ul li:nth-child(2) {
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.text_box1 {
-    width: 300px;
-    background-color: #E0E0E0;
+.intext {
+    position: absolute;
+    top: 184px;
+    left: 48px;
+    width: 200px;
+    height: 100px;
     box-sizing: border-box;
-    margin-left: 20px;
-    height: 40px;
-    padding: 10px 0 0 10px;
 }
 
-.text_box1 input {
-    background-color: transparent;
-    /* 일반태그는 내가 색깔을 넣지 않으면 투명으로 나오지만
-인풋태그는 배경이 기본 색깔이 흰색이다. 이 흰색을 투명으로 만드는 법*/
-    border: none;
-    width: 100%;
+.box1 {
+    margin-left: 20px;
+}
+
+.manual_box {
+    margin: 50px 0 130px;
+}
+
+.manual_box ul li {
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.manual_box ul li:nth-child(1),
+.manual_box ul li:nth-child(2),
+.manual_box ul li:nth-child(3) {
+    margin-bottom: 10px;
+}
+
+.textarea_wrap{
+    font-weight: bold;
+}
+
+.manual_img img {
     display: block;
-    /* 인풋태그는 인라인 요소라서 왠만하면 displayblock처리해주면 된다.*/
+}
+
+.manual_text p {
     font-size: 20px;
-    outline: none;
-}
-
-.text_box1:hover {
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
-}
-
-.textarea_wrap {
-    width: 956px;
     margin-left: 20px;
-    background-color: #E0E0E0;
+    font-weight: 500;
 }
 
-.textarea_wrap:hover {
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+/* section2_s */
+#section2 {
+    width: 1300px;
+    margin: 0 auto;
 }
 
-.textarea_wrap textarea {
-    display: block;
-    width: 100%;
-    border: 1px solid #E0E0E0;
-    outline: none;
-    padding: 10px 0 0 10px;
+.intext1 {
+    position: absolute;
+    top: 24px;
+    left: 73px;
+    width: 500px;
+    height: 100px;
     box-sizing: border-box;
-    height: 95px;
-    resize: vertical;
-    background-color: transparent;
+}
+
+.intext1 h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.intext1 ul li {
+    list-style: square;
+    margin-left: 20px;
     font-size: 20px;
-    text-align: start;
-    /* resize: both;는 가로세로가 변형가능(기본값)  
-       resize: none; 가로세로 변형 불가능
-       resize: horizontal; 가로 변형 가능
-       resize: vertical; 세로 변형 가능
-    */
+    line-height: 32px;
+    font-weight: 500;
 }
 
-.bottom_box {
-    text-align: center;
+.intextbox_a {
+    margin-left: 32px;
 }
 
-.bottom_box a {
-    display: inline-block;
-    font-size: 25px;
-    margin-top: 42px;
-    letter-spacing: 4px;
-    padding: 20px 50px;
-    background-color: #2f6979;
-    color: white;
+/* section2_e */
 
+/* section3_s */
+#section3 {
+    width: 1300px;
+    margin: 0 auto;
 }
 
-/* section1_s */
+.intext2 {
+    position: absolute;
+    top: 238px;
+    left: 81px;
+    width: 200px;
+    height: 100px;
+    box-sizing: border-box;
+}
 
+.intext2 h2 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.intext2 ul li {
+    list-style: square;
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+}
+
+/* section3_e */
 
 /* footer_s */
 #footer {
@@ -441,7 +438,7 @@ table {
 .textbox {
     width: 1110px;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 32px;
 }
@@ -457,10 +454,6 @@ table {
 
 .sup_wrap {
     width: 343px;
-}
-
-.sup_wrap div p {
-    letter-spacing: 1px;
 }
 
 .fol_wrap {
@@ -481,14 +474,10 @@ table {
     width: 100%;
 }
 
-.i_bar ul li {
-    letter-spacing: 3px;
-}
-
 .i_bar ul li span {
     border: 1px solid white;
     display: inline-block;
-    height: 14px;
+    height: 10px;
 }
 
 .i_bar1 {
@@ -504,7 +493,7 @@ table {
     justify-content: space-between;
 }
 
-.socal_icon li:hover {
+.socal_icon li:hover{
     filter: invert(100);
 }
 

@@ -69,6 +69,7 @@ body {
     font-size: 14px;
     line-height: 20px;
     color: black;
+    padding-top: 100px;
 }
 
 html,
@@ -155,8 +156,8 @@ body {
     top: 100px;
     width: 100%;
     z-index: 9;
-    background-color: #000000;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(150, 150, 150, 0.9);
+    /* 백그라운드 컬러 */
     display: none;
 }
 
@@ -523,6 +524,30 @@ body {
     width: 407px;
     height: 601px;
     box-sizing: border-box;
+    position: relative;
+}
+
+.img_a{
+    position: absolute;
+    top: 67px;
+    left: 83px;
+}
+
+.img_b{
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+
+@keyframes scale {
+    0%{transform: scale(1);
+        }
+    100%{transform: scale(1.3);
+        }
+}
+
+.any{
+    animation: scale 3s linear 2;
 }
 
 .inner_text {
@@ -593,7 +618,7 @@ body {
 .textbox {
     width: 1110px;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 32px;
 }
@@ -609,10 +634,6 @@ body {
 
 .sup_wrap {
     width: 343px;
-}
-
-.sup_wrap div p {
-    letter-spacing: 1px;
 }
 
 .fol_wrap {
@@ -633,14 +654,10 @@ body {
     width: 100%;
 }
 
-.i_bar ul li {
-    letter-spacing: 3px;
-}
-
 .i_bar ul li span {
     border: 1px solid white;
     display: inline-block;
-    height: 14px;
+    height: 10px;
 }
 
 .i_bar1 {
@@ -656,7 +673,7 @@ body {
     justify-content: space-between;
 }
 
-.socal_icon li:hover {
+.socal_icon li:hover{
     filter: invert(100);
 }
 

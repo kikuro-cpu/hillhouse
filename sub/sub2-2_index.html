@@ -88,7 +88,7 @@
                                             <li>INFORMATION</li>
                                             <li><a href="./sub3-1_index.html"><img src="../images/sub3_submenu(1).jpg"
                                                         alt="sub3_img"></a></li>
-                                            <li><a href="./sub3-1_index.html"><img src="../images/sub3_submenu(2).jpg"
+                                            <li><a href="./sub3-2_index.html"><img src="../images/sub3_submenu(2).jpg"
                                                         alt="sub3_img"></a></li>
                                         </ul>
                                     </div>
@@ -124,7 +124,7 @@
 
         <!-- banner_s -->
         <div id="banner">
-            <div class="inner_banner animate__animated animate__rollIn">
+            <div class="inner_banner" data-aos="fade-right" data-aos-duration="2000">
                 <p>Additional 
                     <br>Facilities
                 </p>
@@ -151,7 +151,9 @@
         <!-- section2_s -->
         <div id="section2">
             <div class="section_title">
-                <p class="animate__animated animate__flip animate__slow	1s">의 료 시 설</p>
+                <p data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    의 료 시 설
+                </p>
             </div>
             <div class="tf_box">
                 <div class="inner_ftbox">
@@ -184,7 +186,8 @@
                     <div class="text_wrap1">
                         <div class="inner_text">
                             <div class="text_imgbox">
-                                <img src="../images/sub/sub2-2/section2_img5.png" alt="section2_img">
+                                <img class="img_a img_1" src="../images/sub/sub2-2/section2_img5.png" alt="section2_img">
+                                <img class="img_b" src="../images/sub/sub2-2/section2(1)_icon.png" alt="icon">
                             </div>
                             <ul class="text_Nbox">
                                 <li>
@@ -232,7 +235,9 @@
         <!-- section3_s -->
         <div id="section3">
             <div class="section_title">
-                <p class="animate__animated animate__flip animate__slow	1s">운 동 시 설</p>
+                <p data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    운 동 시 설
+                </p>
             </div>
             <div class="tf_box">
                 <div class="inner_ftbox">
@@ -265,7 +270,8 @@
                     <div class="text_wrap1">
                         <div class="inner_text">
                             <div class="text_imgbox">
-                                <img src="../images/sub/sub2-2/section3_img5.png" alt="section3_img">
+                                <img class="img_a img_2" src="../images/sub/sub2-2/section3_img5.png" alt="section3_img">
+                                <img class="img_b" src="../images/sub/sub2-2/section2(1)_icon.png" alt="icon">
                             </div>
                             <ul class="text_Nbox">
                                 <li>
@@ -317,7 +323,9 @@
         <!-- section4_s -->
         <div id="section4">
             <div class="section_title">
-                <p class="animate__animated animate__flip animate__slow	1s">기 타 시 설</p>
+                <p data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    기 타 시 설
+                </p>
             </div>
             <div class="tf_box">
                 <div class="inner_ftbox">
@@ -350,7 +358,8 @@
                     <div class="text_wrap1">
                         <div class="inner_text">
                             <div class="text_imgbox">
-                                <img src="../images/sub/sub2-2/section4_img5.png" alt="section4_img">
+                                <img class="img_a img_3" src="../images/sub/sub2-2/section4_img5.png" alt="section4_img">
+                                <img class="img_b" src="../images/sub/sub2-2/section2(1)_icon.png" alt="icon">
                             </div>
                             <ul class="text_Nbox">
                                 <li>
@@ -413,7 +422,7 @@
                             <div><img src="../images/footer/footer_inf.svg" alt="footer_inf"></div>
                             <div class="i_bar">
                                 <ul>
-                                    <li>상호명 : 힐하우스 실버타운<span class="i_bar1"></span>찰스 리</li>
+                                    <li>상호명 : 힐하우스 실버타운<span class="i_bar1"></span>대표 : 찰스 리</li>
                                     <li><span class="i_bar2"></span>주소 : 부산광역시 중앙대로 450번길</li>
                                     <br>
                                     <li>사업자등록번호 : 602-3215-4562
@@ -483,6 +492,29 @@
     <!-- js -->
     <!-- 오픈소스 -->
     <script src="../js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(window).scroll(function(){
+            if($(this).scrollTop() > 550) {
+                $(".img_1").addClass("any")
+            }else{
+                $(".img_1").removeClass("any")
+            }
+            
+            if($(this).scrollTop() > 1250) {
+                $(".img_2").addClass("any")
+            }else{
+                $(".img_2").removeClass("any")
+            }
+            
+            if($(this).scrollTop() > 1900) {
+                $(".img_3").addClass("any")
+            }else{
+                $(".img_3").removeClass("any")
+            }
+            }); 
+
+        //if ..한다면 이렇게 하고 else .. 한다면 이렇게 해라
+    </script>
     <!-- 제어코드 -->
     <!-- 클릭하면나타나기 -->
     <script>
