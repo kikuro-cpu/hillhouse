@@ -149,6 +149,10 @@ body {
     padding-bottom: 42px;
 }
 
+.gnb>li>a:hover {
+    color: #007CC6;
+}
+
 /* submenu */
 .submenu {
     position: absolute;
@@ -320,7 +324,7 @@ body {
 .img2_box{
     opacity: 0;
     animation: ani1 1s linear forwards;
-    animation-delay: 1s;
+    animation-delay: 0.5s;
 }
 
 @keyframes ani3 {
@@ -338,7 +342,7 @@ body {
 .img3_box{
     opacity: 0;
     animation: ani1 1s linear forwards;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 @keyframes ani4 {
@@ -356,7 +360,7 @@ body {
 .img4_box{
     opacity: 0;
     animation: ani4 1s linear forwards;
-    animation-delay: 3s;
+    animation-delay: 1.5s;
 }
 
 @keyframes ani5 {
@@ -374,7 +378,7 @@ body {
 .img5_box{
     opacity: 0;
     animation: ani5 1s linear forwards;
-    animation-delay: 4s;
+    animation-delay: 2s;
 }
 
 @keyframes ani6 {
@@ -392,7 +396,7 @@ body {
 .img6_box{
     opacity: 0;
     animation: ani6 2s linear forwards;
-    animation-delay: 5s;
+    animation-delay: 2.5s;
 }
 
 @keyframes ani7 {
@@ -410,7 +414,7 @@ body {
 .img7_box{
     opacity: 0;
     animation: ani6 2s linear forwards;
-    animation-delay: 7s;
+    animation-delay: 3s;
 }
 
 /* section2_s */

@@ -149,6 +149,10 @@ body {
     padding-bottom: 42px;
 }
 
+.gnb>li>a:hover {
+    color: #007CC6;
+}
+
 /* submenu */
 .submenu {
     position: absolute;
